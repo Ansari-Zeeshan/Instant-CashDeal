@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   
+    <title>ICD - Instant CashDeal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-submenu.css">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/leaflet.css" type="text/css">
+    <link rel="stylesheet" href="css/map.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css"  href="css/dropzone.css">
+    <link rel="stylesheet" type="text/css"  href="css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css"  href="css/jnoty.css">
+    <link rel="stylesheet" type="text/css"  href="css/slick.css">
+
+    <link rel="stylesheet" type="text/css"  href="css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="css/skins/midnight-blue.css">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="img/logos/xicon.png" type="image/x-icon" >
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700%7CUbuntu:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,300,700">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+    <script  src="js/ie-emulation-modes-warning.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css" />
+</head>
+<body>
+
+
+<!--<div class="page_loader"></div> -->
+
+<!-- Main header start -->
+<header class="main-header sticky-header header-with-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="{{route('home')}}">
+                <img src="img/logos/logocashb.png" alt="logo" class="logo_style">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sell Device
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">              
+                                <li><a class="dropdown-item" href="mobilebrand.html">Sell Mobile</a></li>
+                                <li><a class="dropdown-item" href="tabletbrand.html">Sell Tablet</a></li>
+                        </ul>
+                    </li>
+                   <!-- <li class="nav-item dropdown">
+                        <a class="nav-link" href="bikebrand.html">Sell Bike</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header> <br><br><br>
+<!-- Main header end -->
+
+<section class="sell_mobile">
+    <div class="container">
+      <form action=""> 
+        <div class="row">
+            <div class="myborder active" id="content1" >
+                <h2>Instant CasDeal | Assures Sell | Best Price | Same Day Pickup</h2>
+                <div class="box-content">
+                        <div class="col-md-12">
+                            <h4 class="text-capitalize d-inline">Select your mobile model <i class="fa fa-star"></i></h4>
+                              <div class="select-box">
+                                <div class="options-container margin_top">
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model1" name="category"/>
+                                    <label for="model1">Redmi Note 9</label>
+                                  </div>
+
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model2" name="category" />
+                                    <label for="model2">Redmi Note 9 Pro</label>
+                                  </div>
+                                   <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model3" name="category" />
+                                    <label for="model3">Redmi Note 9 Pro Max</label>
+                                  </div>
+
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model4" name="category" />
+                                    <label for="model4">Redmi 9 Power</label>
+                                  </div>
+
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model5" name="category" />
+                                    <label for="model5">Redmi 9 Prime</label>
+                                  </div>
+
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model6" name="category" />
+                                    <label for="model6">Redmi 9i</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model7" name="category" />
+                                    <label for="model7">Redmi 9</label>
+                                  </div>
+
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model8" name="category" />
+                                    <label for="model8">Redmi 9A</label>
+                                  </div>
+
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model9" name="category" />
+                                    <label for="model9">Redmi Note 8</label>
+                                  </div>
+
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model10" name="category" />
+                                    <label for="model10">Redmi Note 8 Pro</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model11" name="category" />
+                                    <label for="model11">Redmi 8</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model12" name="category" />
+                                    <label for="model12">Redmi 8A</label>
+                                  </div>
+
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model13" name="category" />
+                                    <label for="model13">Redmi k20</label>
+                                  </div>
+
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model14" name="category" />
+                                    <label for="model14">Redmi k20 Pro</label>
+                                  </div>
+
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model15" name="category" />
+                                    <label for="model15">Redmi Note 7</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model16" name="category" />
+                                    <label for="model16">Redmi Note 7 Pro</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model17" name="category" />
+                                    <label for="model17">Redmi Note 7S</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model18" name="category" />
+                                    <label for="model18">Redmi 7</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model19" name="category" />
+                                    <label for="model19">Redmi 6</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model20" name="category" />
+                                    <label for="model20">Redmi 6A</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model21" name="category" />
+                                    <label for="model21">Redmi 6 Pro</label>
+                                  </div>
+                                   <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model22" name="category" />
+                                    <label for="model22">Redmi Note 6</label>
+                                  </div>
+                                   <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model23" name="category" />
+                                    <label for="model23">Redmi Note 6 Pro</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model24" name="category" />
+                                    <label for="model24">Redmi 5</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model25" name="category" />
+                                    <label for="model25">Redmi 5A</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model26" name="category" />
+                                    <label for="model26">Redmi Note 5</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model27" name="category" />
+                                    <label for="model27">Redmi Note 5 Pro</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model28" name="category" />
+                                    <label for="model28">Redmi 4</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model29" name="category" />
+                                    <label for="model29">Redmi 4A</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model30" name="category" />
+                                    <label for="model30">Redmi Note 4</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model31" name="category" />
+                                    <label for="model31">Redmi 3</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model32" name="category" />
+                                    <label for="model32">Redmi 3s Plus</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model33" name="category" />
+                                    <label for="model33">Redmi 3s</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model34" name="category" />
+                                    <label for="model34">Redmi 3s Prime</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model35" name="category" />
+                                    <label for="model35">Redmi 2</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model36" name="category" />
+                                    <label for="model36">Redmi 2 Prime</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model37" name="category" />
+                                    <label for="model37">Redmi Note</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model38" name="category" />
+                                    <label for="model38">Redmi Note Prime</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model39" name="category" />
+                                    <label for="model39">Redmi Note 2</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model40" name="category" />
+                                    <label for="model40">Mi A2</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model41" name="category" />
+                                    <label for="model41">Mi A1</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model42" name="category" />
+                                    <label for="model42">Mi Mix 2</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model43" name="category" />
+                                    <label for="model43">Mi Max 2</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model44" name="category" />
+                                    <label for="model44">Mi Max</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model45" name="category" />
+                                    <label for="model45">Mi A3</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model46" name="category" />
+                                    <label for="model46">Mi 10</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model47" name="category" />
+                                    <label for="model47">Mi 10T</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model48" name="category" />
+                                    <label for="model48">Mi 10T Pro</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model49" name="category" />
+                                    <label for="model49">Mi 4i</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model50" name="category" />
+                                    <label for="model50">Mi 5</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model51" name="category" />
+                                    <label for="model51">Redmi Y1</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model52" name="category" />
+                                    <label for="model52">Redmi Y2</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model53" name="category" />
+                                    <label for="model53">Redmi Y3</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model54" name="category" />
+                                    <label for="brand54">Redmi Y1 Lite</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model55" name="category" />
+                                    <label for="brand55">Redmi Note</label>
+                                  </div>
+                                  <div class="option" id="myoption">
+                                    <input type="radio" class="radio" id="model56" name="category" />
+                                    <label for="brand56">Redmi Note 3</label>
+                                  </div>
+                                </div>
+
+                                <div class="selected">
+                                  Please Select Model
+                                </div>
+                                <div class="search-box">
+                                  <input type="text" class="search_input" placeholder="Start Typing..." />
+                                </div>
+                                <small class="small2" id="modelerror"></small>
+                              </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <h4 class="text-capitalize d-inline">Select Storage Capacity <i class="fa fa-star"></i></h4>
+                              <div class="select-box">
+                                <div class="options-container">
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="storage1" name="storage"/>
+                                    <label for="storage1">2GB</label>
+                                  </div>
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="storage1" name="storage"/>
+                                    <label for="storage1">4GB</label>
+                                  </div>
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="storage1" name="storage"/>
+                                    <label for="storage1">8GB</label>
+                                  </div>
+
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="storage2" name="storage" />
+                                    <label for="storage2">16GB</label>
+                                  </div>
+
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="storage3" name="storage" />
+                                    <label for="storage3">32GB</label>
+                                  </div>
+
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="storage4" name="storage" />
+                                    <label for="storage4">64GB</label>
+                                  </div>
+
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="storage5" name="storage" />
+                                    <label for="storage5">128GB</label>
+                                  </div>
+
+                                  <div class="option">
+                                    <input type="radio" id="storage6" class="radio" name="storage" />
+                                    <label for="storage6">256GB</label>
+                                  </div>
+
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="storage7" name="storage" />
+                                    <label for="storage7">512GB</label>
+                                  </div>
+                                  <div class="option">
+                                    <input type="radio" class="radio" id="storage7" name="storage" />
+                                    <label for="storage7">1TB</label>
+                                  </div>
+                                </div>
+
+                                <div class="selected">
+                                  Please Select Storage
+                                </div>
+                                <small class="small2" id="storageerror"></small>
+                              </div>
+                        </div>
+
+                        <div class="col-md-12 mt-5">
+                            <h4 class="text-capitalize d-inline">Please Select RAM <i class="fa fa-star"></i></h4>
+                              <div class="select-box">
+                                <div class="options-container">
+                                    
+                                  <div class="option">
+                                    <input type="radio" name="ram" value="2GB" />
+                                    <label>   2GB </label>
+                                  </div>
+                                  <div class="option">
+                                    <input type="radio" name="ram" value="3GB" />
+                                    <label>   3GB </label>
+                                  </div>
+                                  <div class="option">
+                                    <input type="radio" name="ram" value="4GB" />
+                                    <label>   4GB </label>
+                                  </div>
+                                  <div class="option">
+                                    <input type="radio" name="ram" value="6GB" />
+                                    <label>   6GB </label>
+                                  </div>
+                                  <div class="option">
+                                    <input type="radio" name="ram" value="8GB" />
+                                    <label>   8GB </label>
+                                  </div>
+                                  <div class="option">
+                                    <input type="radio" name="ram" value="12GB" />
+                                    <label>   12GB </label>
+                                  </div>
+                                  <div class="option">
+                                    <input type="radio" name="ram" value="16GB" />
+                                    <label>   16GB </label>
+                                  </div>
+                                </div>
+
+                                <div class="selected">
+                                  Please Select RAM
+                                </div>
+                                <small id="ramerror"></small>
+                              </div>
+                        </div>
+                        <div class="col-md-5 mt-5 mobile_mar">
+                            <p><h5 class="d-inline">Note:</h5> Fields marked with <i class="fa fa-star"></i> are compulsory filled</p>
+                        </div>
+                        <div class="col-md-6 mt-3 float-left">
+                            <p>Step 1 of 3</p>
+                        </div>
+                        <div class="col-md-6 float-left">
+                            <!--<button type="submit" >Next</button>-->
+                            <a href="javscript:void(0)" type="button" class="next-btn next" id="next1">Next </a>
+                        </div>
+                     </div>  <!-- box-content closed -->
+
+            </div>
+
+            <div class="myborder" id="content2" >
+                <h2>Instant CashDeal | Assured Sell | Best Price | Same Day Pickup</h2>
+                <div class="box-content pad">
+                        <div class="col-md-12">
+                            <h3 class="d-inline mt-1">Hint: </h3><p class="d-inline">Provide Some Suggestion</p>
+                            <div class="d-flex mt-4">
+                              <h5 class="mr-2">Excellent: </h5><p> Your device has no scratches or scuffs on the body. All functions work perfectly. Looks basically brand new</p>
+                            </div>
+                            <div class="d-flex mt-2">
+                              <h5 class="mr-2">Good:</h5><p> Your device has slight scratches on the body, No major scratches or scuffs, No cracks or bumps on the body, All functions nicely working.</p>
+                            </div>
+                            <div class="d-flex mt-2">
+                              <h5 class="mr-2">Fair:</h5><p> Your device has many scratches and / or little broken on the body, There are bumps on the body, But it works fine.</p>
+                            </div>
+                            <div class="d-flex mt-2">
+                              <h5 class="mr-2">Faulty:</h5><p> Your device is not properly working due to many problems.</p>
+                            </div>
+                            <div class="d-flex mt-2">
+                              <h5 class="mr-2">NOTE:&nbsp; We don't accept devices that are physically damaged and water damaged.</h5>
+                            </div>
+                            <br>
+                                <div class="row">
+                                <div class="col-md-4">
+                                <h3>Condition <i class="fa fa-star"></i></h3>
+                                    <input type="radio" name="condition" id="condition1"><label for="condition1">Excellent</label><br>
+                                    <input type="radio" name="condition" id="condition2"><label for="condition2">Good </label><br>
+                                    <input type="radio" name="condition" id="condition3"><label for="condition3">Fair</label><br>
+                                    <input type="radio" name="condition" id="condition4"><label for="condition4">Faulty</label>
+                                    <small class="smallradio1"></small>
+                                </div>
+                                <div class="col-md-4">
+                                <h3>Select Device Age <i class="fa fa-star"></i></h3>
+                                    <input type="radio" name="deviceage" id="deviceage1"><label for="deviceage1">Below 3 Months</label><br>
+                                    <input type="radio" name="deviceage" id="deviceage2"><label for="deviceage2">3 Months - 6 Months </label><br>
+                                    <input type="radio" name="deviceage" id="deviceage3"><label for="deviceage3">6 Months - 12 Months</label><br>
+                                    <input type="radio" name="deviceage" id="deviceage4"><label for="deviceage4">Above 1 Year</label>
+                                    <small class="smallradio2"></small>
+
+                                </div>
+                                <div class="col-md-4">
+                                <h3>Touch Screen Working <i class="fa fa-star"></i></h3>
+                                    <input type="radio" name="touch" id="touch1"><label for="touch1">Excellent</label><br>
+                                    <input type="radio" name="touch" id="touch2"><label for="touch2">Good </label><br>
+                                    <input type="radio" name="touch" id="touch3"><label for="touch3">Fair</label><br>
+                                    <input type="radio" name="touch" id="touch4"><label for="touch4">Issues</label>
+                                    <small class="smallradio3"></small>
+                                </div>    
+                                <br>
+                                <div class="col-md-4">
+                                <h3 style='margin-bottom: 0px !important;'>Select Accessories <span>*</span> <p style="font-size: 14px;">Note: Select option only which you have currently</p> </h3>
+                                    <input type="checkbox" id="box"><label for="box">Company Provided Box</label><br>
+                                    <input type="checkbox" id="charger"><label for="charger">Charger / Original Charger</label><br>
+                                    <input type="checkbox" id="bill"><label for="bill">Valid Bill</label><br>
+                                    <input type="checkbox" id="earphone"><label for="earphone">Earphones / Bluetooth</label><br> 
+                                    <input type="checkbox" id="noneof"><label for="noneof">None of the above</label>
+                                    <small class="smallradio4"></small>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <p><h5 class="d-inline">Note:</h5> Fields marked with <i class="fa fa-star"></i> are compulsory filled</p>
+                        </div>
+                        <div class="col-md-5 float-left">
+                            <button class="next-btn prev-btn">Previous</button>
+                        </div>
+                        <div class="col-md-2 mt-4 float-left">
+                            <p>Step 2 of 3</p>
+                        </div>
+                        <div class="col-md-3 float-left">
+                            <!--<button type="submit" class="next-btn margin_top next" id="next2">Next</button>-->
+                            <a href="javscript:void(0)" type="button" class="next-btn margin_top next" id="next2">Next </a>
+                        </div>
+                </div>  <!-- box-content closed -->
+            </div>
+
+            <div class="myborder" id="content3">
+                <h2>Instant CasDeal | Assures Sell | Best Price | Same Day Pickup</h2>
+                <div class="box-content">
+                      <div class="row">
+                        <div class="col-md-6 mt-35">
+                           <h5 class="text-capitalize d-inline">Name <i class="fa fa-star"></i></h5>
+                           <input type="text" name="name" placeholder="Enter Your Name" autocomplete="off" required>
+                        </div>
+                        <div class="col-md-6 mt-35">
+                           <h5 class="d-inline">Email <i class="fa fa-star"></i></h5>
+                           <input type="email" name="email" placeholder="Enter Your Email ID" autocomplete="off" required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 mt-35">
+                           <h5 class="text-capitalize d-inline">Mobile Number <i class="fa fa-star"></i></h5>
+                           <input type="number" name="mobile_no" placeholder="Enter Your Mobile Number" autocomplete="off" required>
+                        </div>
+                       
+                        <div class="col-md-6 float-left mt-35">
+                           <h5 class="text-capitalize d-inline">Alternate Mobile Number</h5>
+                           <input type="number" name="alternate_no" placeholder="It's optional">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 mt-35" >
+                           <h5 class="d-inline">Pick Up Date <i class="fa fa-star"></i></h5>
+                           <div class="input-group">
+                             <div class="input-group-prepend" style="height: 45px">
+                               <button type="button" id="toggle" class="input-group-text"><i class="fa fa-calendar-alt"></i></button>
+                             </div>
+                             <input type="text" name="pickup_date" id="picker"  placeholder="Please Choose Date" autocomplete="off" required>
+                           </div>
+                        </div>
+                       
+                        <div class="col-md-6 mt-35">
+                           <h5 class="d-inline">Pick Up Time</h5>
+                            <div class="input-group">
+                               <div class="input-group-prepend" style="height: 45px">
+                                 <button type="button" class="input-group-text"><i class="fa fa-clock-o"></i></button>
+                               </div>
+                                 <select name="pickup_time">
+                                   <option value="" hidden>Please Choose Time</option>
+                                   <option value="10AM - 11AM">10AM - 11AM</option>
+                                   <option value="11AM - 12AM">11AM - 12AM</option>
+                                   <option value="12AM - 1PM">12AM - 1PM</option>
+                                   <option value="1PM -  2PM">1PM -  2PM</option>
+                                   <option value="2PM -  3PM">2PM -  3PM</option>
+                                   <option value="3PM -  4PM">3PM -  4PM</option>
+                                   <option value="4PM -  5PM">4PM -  5PM</option>
+                                   <option value="5PM -  6PM">5PM -  6PM</option>
+                                   <option value="6PM -  7PM">6PM -  7PM</option>
+                                 </select>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 mt-35">
+                          <h5 class="text-capitalize d-inline">Address <i class="fa fa-star"></i></h5>
+                          <textarea id="address" name="address" placeholder="Enter Your Proper Residential Address" autocomplete="off" required></textarea>
+                        </div>
+                        <div class="col-md-6 mt-35">
+                          <h5 class="text-capitalize d-inline">Pin Code <i class="fa fa-star"></i></h5>
+                          <input type="number" id="pincode" name="pincode" placeholdert="Enter PIN Code" autocomplete="off" required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 mt-3">
+                            <p><h5 class="d-inline">Note:</h5> Fields marked with <i class="fa fa-star"></i> are compulsory filled</p>
+                        </div>
+                      </div>
+                      <div class="row">  
+                        <div class="col-md-5 float-left">
+                            <button class="next-btn prev-btn">Previous</button>
+                        </div>
+                        <div class="col-md-2 mt-4 float-left">
+                            <p>Step 3 of 3</p>
+                        </div>
+                        <div class="col-md-3 mt-1 float-left">
+                            <!--<button type="submit" class="next-btn margin_top next" id="next3">Submit</button>-->
+                            <button  type="submit" class="next-btn margin_top next" id="next3">Submit </button>
+                        </div>
+                      </div> 
+                </div>  <!-- box-content closed -->
+            </div>  <!-- content3 closed -->
+        </div>
+      </form>
+    </div>
+</section>
+
+<!-- Footer start -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="row">
+           <div class="col-md-4">
+               <div class="footer-item clearfix">
+                    <img src="img/logos/logocashb.png" alt="logo" class="f-logo">
+                   <p>Instant CashDeal offers a great services in Mumbai region with Same day Pickup and Same day transaction without facing any complexity.</p>
+                    <div class="clearfix"></div>
+                    <div class="social-list-2 d-flex">
+                        <h5 class="mt-1 mr-2 text-white">Follow us on: </h5>
+                        <ul>
+                            <li><a href="https://www.facebook.com/instantcashdeal/" class="facebook-bg" target="_blank"><i class="fab fa-facebook "></i></a></li>
+                            <li><a href="#" class="twitter-bg" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/instantcashdeal/" class="google-bg" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCuquXdkiYT-IdNPhsSASmDA" class="linkedin-bg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+            <div class="col-md-4 offset-1">
+                <div class="footer-item">
+                    <h3 class="text-white pb-4">Useful Links</h3>
+                    <ul class="links">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="sellmobile.html">Sell Mobile</a>
+                        </li>
+                        <li>
+                            <a href="selltablet.html">Sell Tablet</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3 class="text-white pb-4">Contact Info</h3>
+                <ul class="contact-info">
+                        <li>
+                            <i class="flaticon-pin"></i><p>Starcity cinema Takalwadi, C-wing, Flr-Grd, Bal Govind Chs Ltd, Taikalwadi Marg, Mahim, Mumbai, Maharashtra 400016</p>
+                        </li>
+                        <li>
+                            <i class="flaticon-mail"></i><a href="mailto:sales@hotelempire.com">info@instantcashdeal.com</a>
+                        </li>
+                        <li>
+                            <i class="flaticon-phone"></i><a href="tel:+55-417-634-7071">+91 7900090989</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->
+
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>All the devices, brands, names, logo and images belonging to their respective owners</p>
+                <p>Instant CashDeal &#169;2021 All rights reserved</p>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<!-- Full Page Search -->
+<div id="full-page-search">
+    <button type="button" class="close">×</button>
+    <form action="http://theme-vessel-templates.theme-vessel.ey.r.appspot.com/cmart/index.html#">
+        <input type="search" value="" placeholder="type keyword(s) here" />
+        <button type="submit" class="btn btn-sm button-theme">Search</button>
+    </form>
+</div>
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script  src="js/bootstrap-submenu.js"></script>
+<script  src="js/rangeslider.js"></script>
+<script  src="js/jquery.mb.YTPlayer.js"></script>
+<script  src="js/bootstrap-select.min.js"></script>
+<script  src="js/jquery.easing.1.3.js"></script>
+<script  src="js/jquery.scrollUp.js"></script>
+<script  src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script  src="js/leaflet.js"></script>
+<script  src="js/leaflet-providers.js"></script>
+<script  src="js/leaflet.markercluster.js"></script>
+<script  src="js/dropzone.js"></script>
+<script  src="js/slick.min.js"></script>
+<script  src="js/jquery.filterizr.js"></script>
+<script  src="js/jquery.magnific-popup.min.js"></script>
+<script  src="js/jquery.countdown.js"></script>
+<script  src="js/jquery.mousewheel.min.js"></script>
+<script  src="js/lightgallery-all.js"></script>
+<script  src="js/jnoty.js"></script>
+<script  src="js/maps.js"></script>
+<script  src="js/app.js"></script>
+<script  src="js/jquery.datetimepicker.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script  src="js/ie10-viewport-bug-workaround.js"></script>
+<!-- Custom javascript -->
+<script  src="js/ie10-viewport-bug-workaround.js"></script>
+
+<script  src="js/myscript2.js"></script>
+
+<script>
+  $.datetimepicker.setDateFormatter('moment')
+  $('#picker').datetimepicker(
+  {
+    timepicker:false,
+    datepicker:true,
+    format:'YYYY-MM-DD'
+  })
+  $('#toggle').on('click',function()
+  {
+    $('#picker').datetimepicker('toggle');
+  })
+  
+</script>
+
+</body>
+
+</html>
+
+
+

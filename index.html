@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   
+    <title>ICD - Instant CashDeal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-submenu.css">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/leaflet.css" type="text/css">
+    <link rel="stylesheet" href="css/map.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css"  href="css/dropzone.css">
+    <link rel="stylesheet" type="text/css"  href="css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css"  href="css/jnoty.css">
+    <link rel="stylesheet" type="text/css"  href="css/slick.css">
+
+    <link rel="stylesheet" type="text/css"  href="css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="css/skins/midnight-blue.css">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="img/logos/xicon.png" type="image/x-icon" >
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700%7CUbuntu:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,300,700">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+    <script  src="js/ie-emulation-modes-warning.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css" />
+</head>
+<body>
+
+
+<!--<div class="page_loader"></div> -->
+
+<!-- Main header start -->
+<header class="main-header sticky-header header-with-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="{{route('home')}}">
+                <img src="img/logos/logocashb.png" alt="logo" class="logo_style">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sell Device
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">              
+                                <li><a class="dropdown-item" href="mobilebrand.html">Sell Mobile</a></li>
+                                <li><a class="dropdown-item" href="tabletbrand.html">Sell Tablet</a></li>
+                        </ul>
+                    </li>
+                   <!-- <li class="nav-item dropdown">
+                        <a class="nav-link" href="bikebrand.html">Sell Bike</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header> <br><br><br>
+<!-- Main header end -->
+
+<!-- Banner start -->
+<div class="banner" id="banner">
+    <div id="bannerCarousole" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#bannerCarousole" data-slide-to="0" class="active"></li>
+          <li data-target="#bannerCarousole" data-slide-to="1"></li>
+          <!--<li data-target="#bannerCarousole" data-slide-to="2"></li>-->
+        </ol>
+        <div class="carousel-inner banner-slider-inner text-center">
+            <div class="carousel-item banner-max-height active item-bg">
+                <img class="d-block w-100 h-100" src="img/myimg/mobilebrand2.jpg" alt="banner">
+                <div class="carousel-content container banner-info-2 bi-2">
+                    <h1 data-aos="flip-up">Welcome to Our Company</h1>
+                    <p>Interested in selling your Mobile! Please click below link to sell your old device</p>
+                    <a href="{{route('brand',['category_id' => 1])}}" class="btn btn-lg btn-round btn-theme">Sell Mobile</a>
+                </div>
+            </div>
+            <div class="carousel-item banner-max-height item-bg">
+                <img class="d-block w-100 h-100" src="img/myimg/tabletbrand2.jpg" alt="banner">
+                <div class="carousel-content container banner-info-2 bi-2">
+                    <h1 data-aos="flip-up" data-aos-delay="3000">You can sell Tablet also</h1>
+                    <p data-aos="fade-left" data-aos-delay="3000">We provide best buying goods feel free to consult us</p>
+                    <a href="{{route('brand',['category_id' => 2])}}" class="btn btn-lg btn-round btn-theme">Sell Tablet</a>
+                </div>
+            </div>
+            <!--<div class="carousel-item banner-max-height item-bg">-->
+            <!--    <img class="d-block w-100 h-100" src="img/myimg/bike_slider.jpg" alt="banner">-->
+            <!--    <div class="carousel-content container banner-info-2 bi-2">-->
+            <!--        <h1>Bike also</h1>-->
+            <!--        <p>Not only devices You can sell bike also just give us a chance to visit</p>-->
+            <!--        <a href="bikebrand.html" class="btn btn-lg btn-round btn-theme">Sell Bike</a>-->
+            <!--    </div>-->
+            <!--</div>-->
+        </div>
+        <a class="carousel-control-prev " href="#bannerCarousole" role="button" data-slide="prev">
+            <span class="slider-mover-left" aria-hidden="true">
+                <i class="fa fa-angle-left"></i>
+            </span>
+        </a>
+        <a class="carousel-control-next " href="#bannerCarousole" role="button" data-slide="next">
+            <span class="slider-mover-right" aria-hidden="true">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </a>
+    </div>
+</div>
+<!-- Banner end -->
+
+
+<!-- option box 3 start -->
+<section class="option_box">
+        <div class="option_boxinner">
+           <h4 class="text-center mt-4">What whould you like to do?</h4>    
+           <div class="row">
+               <div class="col-md-6  my_flex">
+                   <a href="mobilebrand.html"><img src="img/myimg/sellphone2.png" class="png_img" alt=""></a>
+                   <h5>Sell Phone</h5>
+               </div>
+               <div class="col-md-6  my_flex">
+                   <a href="tabletbrand.html"><img src="img/myimg/selltablet2.png" class="png_img" alt=""></a>
+                   <h5>Sell Tablet</h5>
+               </div>
+           </div>
+        </div>
+</section>
+<!-- option box 3 end -->
+
+<!-- About car start -->
+<div class="about-car  content-area-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                <div class="about-slider-box simple-slider" data-aos="zoom-in">
+                    <img class="d-block w-100" src="img/myimg/indiarupee.jpg" alt="about">
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                <div class="about-text" data-aos="fade-up">
+                    <h3>Welcome to Instant CashDeal</h3>
+                    <p>We believe that people always are confused and afraid of not getting a worthy price against their old items like phones, tablets & bikes. 
+                    We've built a better approach with info, technology and a great team of professional employess to create a better solution for people.</p>
+                    <a href="about.html" class="read_btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About car end -->
+
+<section class="buy_process">
+    <div class="container">
+        <h2 class="text-center mt-4 pb-4 mb-4">Why Instant CashDeal</h2>
+        <div class="row mt-5">
+            <div class="col-md-4 mob_margin">
+                <div class="img_image">
+                    <img src="img/myimg/checkprice.png" class="png_image" alt="">                    
+                </div>
+                <div class="inline_item d-flex">
+                   <span class="num_style">1</span><h3>Safe & Secure</h3>    
+                </div>
+                
+                <p class="text-center">Select your device and we will help you get the best selling price based on the current condition of your gadget and the current market price </p>
+            </div>
+            <div class="col-md-4 mob_margin">
+                <div class="img_image">
+                    <img src="img/myimg/delivery.png" class="png_image" alt="">                    
+                </div>
+                <div class="inline_item d-flex">
+                   <span class="num_style">2</span><h3>Instant Payment</h3>    
+                </div>
+                
+                <p class="text-center">By accepting the price offered for your device, we will arrange a free pickup </p>
+            </div>
+            <div class="col-md-4 mob_margin">
+                <div class="img_image">
+                    <img src="img/myimg/cash_anime.png" class="png_image" alt="">                    
+                </div>
+                <div class="inline_item d-flex">
+                   <span class="num_style">3</span><h3 class="ml-4">Best Price</h3>    
+                </div>            
+                <p class="text-center">Instant Cash will be returned to you upon withdrawal or via the payment method of your choice </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why_us">
+    <div class="container">
+        <h2 class="text-center pb-4 mt-4">Our Valuable Things</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 d-flex" data-aos="zoom-in">
+                <div class="my_flex">
+                   <i class="fa fa-hand-peace-o"></i>
+                   <h3>Assured Sell</h3>
+                   <p class="text-center">Other services keep your device for up to a month until it sells out. Not here!</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="my_flex">
+                   <i class="fa fa-check-circle"></i>
+                   <h3>Easy</h3>
+                   <p class="text-center">We made the whole thing quick, responsive, easy and hassle free.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="my_flex">
+                   <i class="fa fa-smile-o"></i>
+                   <h3>User Satisfaction</h3>
+                   <p class="text-center">If you see a better deal online for your device, we won't just match it. We will beat him!</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="my_flex">
+                   <i class="fa fa-money"></i>
+                   <h3>Amazing Price</h3>
+                   <p class="text-center">We offers our consumers an excellent market price for the purchase of their old devices.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="my_flex">
+                   <i class="fa fa-space-shuttle"></i>
+                   <h3>Same Day Pickup</h3>
+                   <p class="text-center">We will pick up your old device as soon as possible be free about it.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="my_flex">
+                   <i class="fa fa-wrench"></i>
+                   <h3>Faulty Device</h3>
+                   <p class="text-center">Faulty devices! no problem Hurray! we also buy faulty devices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Advantages 3 start -->
+<div class="advantages-3">
+    <div class="container">
+        <div class="row">
+            <!--<div class="col-md-3 my_flex">-->
+                <!-- <img src="img/myimg/cash_anime.png" data-target="150000" alt=""> -->
+            <!--    <i class="fa fa-money fa-4x"></i>-->
+            <!--    <h5 class="pt-3">Total Cash Given</h5>-->
+            <!--    <div class="counter" data-target="150000">0</div>-->
+            <!--</div>-->
+            <div class="col-md-4 my_flex">
+                <i class="fa fa-mobile-alt fa-4x"></i>
+                <h5 class="pt-3">Total Devices Purchased</h5>
+                <div class="counter" data-target="1853">0</div>
+            </div>
+            <div class="col-md-4 my_flex">
+                <i class="fa fa-smile-o fa-4x"></i>
+                <h5 class="pt-3">Happy Users</h5>
+                <div class="counter" data-target="1060">0</div>
+            </div>
+            <div class="col-md-4 my_flex">
+                <i class="fa fa-user fa-4x"></i>
+                <h5 class="pt-3">Total Clients</h5>
+                <div class="counter" data-target="1245">0</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Advantages 3 end -->
+
+<!-- Testimonial start -->
+<div class="testimonial bg-grea-3 content-area-5">
+    <div class="container">
+        <!-- Main title -->
+        <h2 class="text-center pb-4 mb-4">Our Testimonial</h2>
+        <!-- Slick slider area start -->
+        <div class="slick-slider-area">
+            <div class="row slick-carousel" data-slick='{"slidesToShow": 2, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+                <div class="slick-slide-item">
+                    <div class="testimonial-inner">
+                        <div class="text-box">
+                            <p>You can sell your old Mobile with one of the best deals in Mumbai, No hesitation, No problem i have faced, 5 star type of services they are providing,  5 star I have given them because they deserve it.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span>( 5 Reviews )</span>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="photo">
+                                <!--<img class="media-object" src="img/avatar/avatar-1.jpg" alt="user">-->
+                            </div>
+                            <div class="detail">
+                                <h5>Mujeeb Ansari</h5>
+                                <p>Mulund, Mumbai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="testimonial-inner">
+                        <div class="text-box">
+                            <p>Do you want to sell your old Tablet, You came to right place, I do not think i can get better than this type of deals it's one of the best type of services i have got, So don't think much just give them a chance to visit, You can't live without giving them a 5 star.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-sta"></i>
+                                <span>( 5 Reviews )</span>
+                            </div>
+                        </div>
+
+                        <div class="user">
+                            <div class="photo">
+                                <!--<img class="media-object" src="img/avatar/avatar-1.jpg" alt="user">-->
+                            </div>
+                            <div class="detail">
+                                <h5>Pooja Datta</h5>
+                                <p>Thane, Navi Mumbai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="testimonial-inner">
+                        <div class="text-box">
+                            <p>I have just gone through Instant CashDeal official website and sell my old mobile, The very next day a delivery boy came and he just provide me money and taken my old device, it's so Fast, Simple & Hassle-free.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span>( 5 Reviews )</span>
+                            </div>
+                        </div>
+
+                        <div class="user">
+                            <!--<div class="photo">-->
+                                <!--<img class="media-object" src="img/avatar/avatar-2.jpg" alt="user">-->
+                            <!--</div>-->
+                            <div class="detail">
+                                <h5>Rahul Kumar</h5>
+                                <p>Nerul, Navi Mumbai</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="slick-prev slick-arrow-buton">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="slick-next slick-arrow-buton">
+                <i class="fa fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial end -->
+ 
+<!-- Intro section start -->
+<div class="intro-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                <div class="intro-text">
+                    <h3>Do You Have Questions ?</h3> 
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <button class="btn btn-md" id="mymodalbtn">Get in Touch</a>
+            </div>
+            <div class="my_modal">
+                    <div class="modal_content">
+                         <div class="modal-header">
+                            <h5 class="modal-title">Contact Us</h5>
+                            <div> 
+                              <span class="closebtn">&times;</span>
+                            </div>
+                        </div>
+                        <div class="modal_body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-control2">
+                                         <input type="text" placeholder="Enter Name" class="form-control" id="name" autocomplete="off" required>
+                                         <small></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-control2">
+                                         <input type="email" placeholder="Enter Email" class="form-control" autocomplete="off" id="email" >
+                                         <small></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-control3">
+                                         <input type="text" class="form-control" placeholder="Subject" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-control2">
+                                          <input type="number" placeholder="Enter Mobile Number" autocomplete="off" class="form-control" id="phone" required>
+                                          <small></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-control2">
+                                          <input type="textarea" placeholder="Type Message here" autocomplete="off" class="form-control" id="textarea" required>
+                                          <small></small>
+                                        </div>
+                                    </div>
+                                    <button class="btn_send">Send Message</button>
+                                </div>
+                            </form>
+                        </div> <!-- modal_body closed -->
+                    </div> <!-- modal content closed -->
+                </div> <!-- my modal closed -->
+        </div>
+    </div>
+</div>
+<!-- Intro section end -->
+
+<!-- Footer start -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="row">
+           <div class="col-md-4">
+               <div class="footer-item clearfix">
+                    <img src="img/logos/logocashb.png" alt="logo" class="f-logo">
+                   <p>Instant CashDeal offers a great services in Mumbai region with Same day Pickup and Same day transaction without facing any complexity.</p>
+                    <div class="clearfix"></div>
+                    <div class="social-list-2 d-flex">
+                        <h5 class="mt-1 mr-2 text-white">Follow us on: </h5>
+                        <ul>
+                            <li><a href="https://www.facebook.com/instantcashdeal/" class="facebook-bg" target="_blank"><i class="fab fa-facebook "></i></a></li>
+                            <li><a href="#" class="twitter-bg" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/instantcashdeal/" class="google-bg" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCuquXdkiYT-IdNPhsSASmDA" class="linkedin-bg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+            <div class="col-md-4 offset-1">
+                <div class="footer-item">
+                    <h3 class="text-white pb-4">Useful Links</h3>
+                    <ul class="links">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="sellmobile.html">Sell Mobile</a>
+                        </li>
+                        <li>
+                            <a href="selltablet.html">Sell Tablet</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3 class="text-white pb-4">Contact Info</h3>
+                <ul class="contact-info">
+                        <li>
+                            <i class="flaticon-pin"></i><p>Starcity cinema Takalwadi, C-wing, Flr-Grd, Bal Govind Chs Ltd, Taikalwadi Marg, Mahim, Mumbai, Maharashtra 400016</p>
+                        </li>
+                        <li>
+                            <i class="flaticon-mail"></i><a href="mailto:sales@hotelempire.com">info@instantcashdeal.com</a>
+                        </li>
+                        <li>
+                            <i class="flaticon-phone"></i><a href="tel:+55-417-634-7071">+91 7900090989</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->
+
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>All the devices, brands, names, logo and images belonging to their respective owners</p>
+                <p>Instant CashDeal &#169;2021 All rights reserved</p>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<!-- Full Page Search -->
+<div id="full-page-search">
+    <button type="button" class="close">×</button>
+    <form action="http://theme-vessel-templates.theme-vessel.ey.r.appspot.com/cmart/index.html#">
+        <input type="search" value="" placeholder="type keyword(s) here" />
+        <button type="submit" class="btn btn-sm button-theme">Search</button>
+    </form>
+</div>
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js"></script>
+<script>
+AOS.init({
+            duration: 1200,
+        })
+</script>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script  src="js/bootstrap-submenu.js"></script>
+<script  src="js/rangeslider.js"></script>
+<script  src="js/jquery.mb.YTPlayer.js"></script>
+<script  src="js/bootstrap-select.min.js"></script>
+<script  src="js/jquery.easing.1.3.js"></script>
+<script  src="js/jquery.scrollUp.js"></script>
+<script  src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script  src="js/leaflet.js"></script>
+<script  src="js/leaflet-providers.js"></script>
+<script  src="js/leaflet.markercluster.js"></script>
+<script  src="js/dropzone.js"></script>
+<script  src="js/slick.min.js"></script>
+<script  src="js/jquery.filterizr.js"></script>
+<script  src="js/jquery.magnific-popup.min.js"></script>
+<script  src="js/jquery.countdown.js"></script>
+<script  src="js/jquery.mousewheel.min.js"></script>
+<script  src="js/lightgallery-all.js"></script>
+<script  src="js/jnoty.js"></script>
+<script  src="js/maps.js"></script>
+<script  src="js/app.js"></script>
+<script  src="js/jquery.datetimepicker.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script  src="js/ie10-viewport-bug-workaround.js"></script>
+<!-- Custom javascript -->
+<script  src="js/ie10-viewport-bug-workaround.js"></script>
+
+<script  src="js/myscript.js"></script>
+
+</body>
+
+</html>
